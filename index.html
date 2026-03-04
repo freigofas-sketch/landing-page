@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">Brand<span>Flow</span></div>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="btn btn-outline">Sign in</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Supercharge your workflow</p>
+            <h1>Modern landing pages, built in minutes.</h1>
+            <p class="hero-subtitle">
+              Launch beautiful, responsive landing pages without touching a line
+              of backend code. Focus on your message—we’ll handle the rest.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary">Get started free</button>
+              <button class="btn btn-ghost">Book a demo</button>
+            </div>
+            <p class="hero-meta">No credit card required · 14-day free trial</p>
+          </div>
+
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-title">Live preview</p>
+              <p class="hero-card-text">
+                Update your content and instantly see how it looks on desktop,
+                tablet, and mobile.
+              </p>
+              <div class="hero-stats">
+                <div class="stat">
+                  <p class="stat-label">Conversion rate</p>
+                  <p class="stat-value">+32%</p>
+                </div>
+                <div class="stat">
+                  <p class="stat-label">Launch time</p>
+                  <p class="stat-value">4x faster</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="section features">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Why choose BrandFlow</p>
+            <h2>Everything you need to launch with confidence.</h2>
+            <p class="section-subtitle">
+              From idea to launch in a single afternoon. Powerful tools that
+              stay out of your way.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Fast setup</h3>
+              <p>
+                Start from polished templates and customize copy, colors, and
+                layout in minutes.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📱</div>
+              <h3>Fully responsive</h3>
+              <p>
+                Your page looks sharp on every screen size—no extra work
+                required.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Built-in analytics</h3>
+              <p>
+                See what’s working with real-time analytics and simple A/B
+                testing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call To Action Section -->
+      <section id="pricing" class="section cta">
+        <div class="container cta-inner">
+          <div class="cta-text">
+            <h2>Ready to launch your next big idea?</h2>
+            <p>
+              Join teams that ship faster, experiment more, and convert better
+              with modern landing pages.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-primary btn-lg">Start free trial</button>
+            <p class="cta-note">Get full access for 14 days.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> BrandFlow. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear().toString();
+      }
+    </script>
+  </body>
+</html>
